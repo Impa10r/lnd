@@ -1,11 +1,19 @@
 module github.com/lightningnetwork/lnd
 
+// custom versions that add testnet4 support
+replace github.com/btcsuite/btcd => github.com/impa10r/btcd v0.0.0-20240803152009-0816848dca62
+
+replace github.com/btcsuite/btcwallet => github.com/impa10r/btcwallet v0.16.10-0.20240803152300-ee5cf2384334
+
+//replace github.com/btcsuite/btcd => ./../btcd
+//replace github.com/btcsuite/btcwallet => ./../btcwallet
+
 require (
 	github.com/NebulousLabs/go-upnp v0.0.0-20180202185039-29b680b06c82
 	github.com/Yawning/aez v0.0.0-20211027044916-e49e68abd344
 	github.com/andybalholm/brotli v1.0.4
 	github.com/btcsuite/btcd v0.24.2-beta.rc1.0.20240625142744-cc26860b4026
-	github.com/btcsuite/btcd/btcec/v2 v2.3.3
+	github.com/btcsuite/btcd/btcec/v2 v2.3.4
 	github.com/btcsuite/btcd/btcutil v1.1.5
 	github.com/btcsuite/btcd/btcutil/psbt v1.1.8
 	github.com/btcsuite/btcd/chaincfg/chainhash v1.1.0
@@ -19,7 +27,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.3.0
 	github.com/go-errors/errors v1.0.1
-	github.com/gorilla/websocket v1.5.0
+	github.com/gorilla/websocket v1.5.3
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.5.0
@@ -27,7 +35,7 @@ require (
 	github.com/jackpal/gateway v1.0.5
 	github.com/jackpal/go-nat-pmp v0.0.0-20170405195558-28a68d0c24ad
 	github.com/jedib0t/go-pretty/v6 v6.2.7
-	github.com/jessevdk/go-flags v1.4.0
+	github.com/jessevdk/go-flags v1.6.1
 	github.com/jrick/logrotate v1.0.0
 	github.com/kkdai/bstream v1.0.0
 	github.com/lightninglabs/neutrino v0.16.1-0.20240425105051-602843d34ffd
@@ -51,12 +59,12 @@ require (
 	github.com/urfave/cli v1.22.9
 	go.etcd.io/etcd/client/pkg/v3 v3.5.7
 	go.etcd.io/etcd/client/v3 v3.5.7
-	golang.org/x/crypto v0.22.0
+	golang.org/x/crypto v0.25.0
 	golang.org/x/exp v0.0.0-20240325151524-a685a6edb6d8
 	golang.org/x/mobile v0.0.0-20190719004257-d2bd2a29d028
-	golang.org/x/net v0.24.0
+	golang.org/x/net v0.27.0
 	golang.org/x/sync v0.7.0
-	golang.org/x/term v0.19.0
+	golang.org/x/term v0.22.0
 	golang.org/x/time v0.3.0
 	google.golang.org/grpc v1.59.0
 	google.golang.org/protobuf v1.33.0
@@ -83,7 +91,7 @@ require (
 	github.com/coreos/go-systemd/v22 v22.3.2 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.0 // indirect
 	github.com/decred/dcrd/crypto/blake256 v1.0.1 // indirect
-	github.com/decred/dcrd/lru v1.1.2 // indirect
+	github.com/decred/dcrd/lru v1.1.3 // indirect
 	github.com/docker/cli v20.10.17+incompatible // indirect
 	github.com/docker/docker v24.0.7+incompatible // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
@@ -172,10 +180,10 @@ require (
 	go.uber.org/atomic v1.7.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.17.0 // indirect
-	golang.org/x/mod v0.16.0 // indirect
-	golang.org/x/sys v0.19.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
-	golang.org/x/tools v0.19.0 // indirect
+	golang.org/x/mod v0.17.0 // indirect
+	golang.org/x/sys v0.22.0 // indirect
+	golang.org/x/text v0.16.0 // indirect
+	golang.org/x/tools v0.21.1-0.20240508182429-e35e4ccd0d2d // indirect
 	google.golang.org/genproto v0.0.0-20231016165738-49dd2c1f3d0b // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20231016165738-49dd2c1f3d0b // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20231030173426-d783a09b4405 // indirect

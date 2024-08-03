@@ -115,7 +115,7 @@ var (
 
 	testKeyLoc = keychain.KeyLocator{Family: keychain.KeyFamilyNodeKey}
 
-	fundingNetParams = chainreg.BitcoinTestNetParams
+	fundingNetParams = chainreg.BitcoinTestNet4Params
 
 	alias = lnwire.ShortChannelID{
 		BlockHeight: 16_000_000,

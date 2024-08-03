@@ -22,6 +22,14 @@ var BitcoinTestNetParams = BitcoinNetParams{
 	CoinType: keychain.CoinTypeTestnet,
 }
 
+// BitcoinTestNet4Params contains parameters specific to the 4th version of the
+// test network.
+var BitcoinTestNet4Params = BitcoinNetParams{
+	Params:   &bitcoinCfg.TestNet4Params,
+	RPCPort:  "18334",
+	CoinType: keychain.CoinTypeTestnet,
+}
+
 // BitcoinMainNetParams contains parameters specific to the current Bitcoin
 // mainnet.
 var BitcoinMainNetParams = BitcoinNetParams{

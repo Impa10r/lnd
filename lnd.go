@@ -169,7 +169,10 @@ func Main(cfg *Config, lisCfg ListenerCfg, implCfg *ImplementationCfg,
 	var network string
 	switch {
 	case cfg.Bitcoin.TestNet3:
-		network = "testnet"
+		network = "testnet3"
+
+	case cfg.Bitcoin.TestNet4:
+		network = "testnet4"
 
 	case cfg.Bitcoin.MainNet:
 		network = "mainnet"

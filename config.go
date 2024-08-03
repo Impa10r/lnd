@@ -1193,6 +1193,10 @@ func ValidateConfig(cfg Config, interceptor signal.Interceptor, fileParser,
 		numNets++
 		cfg.ActiveNetParams = chainreg.BitcoinTestNetParams
 	}
+	if cfg.Bitcoin.TestNet4 {
+		numNets++
+		cfg.ActiveNetParams = chainreg.BitcoinTestNet4Params
+	}
 	if cfg.Bitcoin.RegTest {
 		numNets++
 		cfg.ActiveNetParams = chainreg.BitcoinRegTestNetParams

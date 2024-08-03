@@ -66,7 +66,7 @@ func TestShouldPeerBootstrap(t *testing.T) {
 		{
 			cfg: &Config{
 				Bitcoin: &lncfg.Chain{
-					TestNet3: true,
+					TestNet4: true,
 				},
 			},
 			shouldBoostrap: true,
