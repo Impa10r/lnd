@@ -3,8 +3,9 @@ module github.com/lightningnetwork/lnd
 // custom versions that add testnet4 support
 replace github.com/btcsuite/btcd => github.com/impa10r/btcd v0.0.0-20240803152009-0816848dca62
 
-replace github.com/btcsuite/btcwallet => github.com/impa10r/btcwallet v0.16.10-0.20240803152300-ee5cf2384334
+replace github.com/btcsuite/btcwallet => github.com/impa10r/btcwallet v0.16.10-0.20240803162513-2421774ce9e3
 
+// local dev versions
 //replace github.com/btcsuite/btcd => ./../btcd
 //replace github.com/btcsuite/btcwallet => ./../btcwallet
 
