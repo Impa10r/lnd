@@ -26,7 +26,7 @@ var BitcoinTestNetParams = BitcoinNetParams{
 // test network.
 var BitcoinTestNet4Params = BitcoinNetParams{
 	Params:   &bitcoinCfg.TestNet4Params,
-	RPCPort:  "18334",
+	RPCPort:  "48334",
 	CoinType: keychain.CoinTypeTestnet,
 }
 
