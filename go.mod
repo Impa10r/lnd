@@ -207,9 +207,10 @@ replace github.com/gogo/protobuf => github.com/gogo/protobuf v1.3.2
 // allows us to specify that as an option.
 replace google.golang.org/protobuf => github.com/lightninglabs/protobuf-go-hex-display v1.30.0-hex-display
 
-replace github.com/lightninglabs/neutrino => github.com/lightninglabs/neutrino v0.16.1-0.20250318212332-4f6ab5d6f749
-
-replace github.com/btcsuite/btcwallet => github.com/btcsuite/btcwallet v0.16.11-0.20250318205240-9579367b438e
+// replace github.com/lightninglabs/neutrino => github.com/lightninglabs/neutrino v0.16.1-0.20250318212332-4f6ab5d6f749
+replace github.com/lightninglabs/neutrino => ../neutrino
+// replace github.com/btcsuite/btcwallet => github.com/btcsuite/btcwallet v0.16.11-0.20250318205240-9579367b438e
+replace github.com/btcsuite/btcwallet => ../btcwallet
 
 // If you change this please also update docs/INSTALL.md and GO_VERSION in
 // Makefile (then run `make lint` to see where else it needs to be updated as
